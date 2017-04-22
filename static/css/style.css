@@ -1,0 +1,186 @@
+/*    .axis text{
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      text-anchor: end;
+    }
+    .axis path{
+      fill:none;
+      stroke:black;
+      stroke-width: 0.5px;
+      shape-rendering: crispEdges;
+    }*/
+
+
+li.disabled a{
+  background: #1abc9c !important;
+  color: black !important;
+}
+.bar{
+        stroke: none;
+        fill: #1abc9c;
+        margin-right: 4px;
+    }
+.textlabel{
+       font-family: Helvetica, Arial, sans-serif;
+        font-size:14px;
+        text-anchor: middle;
+    }
+   
+.container-fluid {
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    overflow: auto; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.PCA {
+
+  background: #b0bec5
+;
+}
+
+.MDSC {
+
+  background: #b0bec5
+;
+}
+.MDSE {
+
+  background: #b0bec5
+;
+}
+.PCAS {
+
+  background: #b0bec5
+;
+}
+
+
+
+/*.PCAR {*/
+
+  /*background: #b0bec5*/
+/*;*/
+/*}*/
+
+/*#MDSCR {*/
+
+  /*background: #b0bec5*/
+/*;*/
+/*}*/
+/*#MDSER {*/
+
+  /*background: #b0bec5*/
+/*;*/
+/*}*/
+/*#PCASR {*/
+
+  /*background: #b0bec5*/
+/*;*/
+/*}*/
+
+
+#table_container li a.active {
+  color: black;
+  background: #1abc9c;
+}
+
+.brand {
+    color: white !important;
+    font-size: 2.220em;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+.line {
+  fill: none;
+  stroke: #1abc9c;
+  stroke-width: 2px;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+.nodes circle{
+  stroke: white;
+  stroke-width: 1.5px;
+}
+
+.container-vertical {
+  position: absolute;
+  max-width:300px;
+  height: 2500px;
+  background-color: #000000;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-right: 0;
+  margin-left: 0;
+}
+.nav.nav-pills.nav-stacked li a{
+    margin-top: 20px;
+    color: white;
+}
+.nav.nav-pills.nav-stacked li a:hover{
+    background: #1abc9c;
+    color: black;
+}
+
+
+.nav.nav-pills li a{
+  color: white;
+  font-size: 1.275em
+}
+
+.nav.nav-pills li a:hover{
+  background: #1abc9c;
+  color: black;
+}
+
+.nav.nav-pills li a:hover{
+  background: #1abc9c;
+  color: black;
+}
+
+svg {
+  font: 10px sans-serif;
+  padding: 10px;
+}
+
+.axis,
+.frame {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+  display: none;
+}
+
+.cell text {
+  font-weight: bold;
+  text-transform: capitalize;
+  fill: black;
+}
+
+.frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+circle {
+  fill-opacity: .7;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}

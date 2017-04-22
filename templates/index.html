@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>Game Data</title>
+ 		<link rel="stylesheet" href="./static/lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+{#        <link rel="stylesheet" href="./static/lib/css/dc.css">#}
+
+
+
+	</head>
+
+	<body>
+	   <!-- <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Variables
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" id="table_container">
+        </ul>
+      </div> -->
+       <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand brand" href="#">Dashboard</a>
+                </div>
+                <ul class="nav nav-pills"  id = "table_container">
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-vertical">
+            <ul class="nav nav-pills nav-stacked" id ="diagram_indicator">
+                <li role="presentation"><a id="strat" href="#">ScatterPlots</a></li>
+                <li role="presentation"><a id="rand" href="#">ScatterPlot Matrices</a></li>
+                <li role="presentation"><a id="stratImg" href="#">StratifiedPlots</a></li>
+                <li role="presentation"><a id="randImg" href="#">RandomPlots</a></li>
+            </ul>
+        </div>
+
+       <div class="container" id="stratified">
+           <div class="row">
+               <div class="col-md-12 col-lg-12" style="margin-left:5cm" > Data Projected into the top two PCA vectors(black = Stratified), (Blue = Random)</div>
+               <div class="col-md-12 col-lg-12" id = "PCA"></div>
+           </div>
+            <div class="row">
+               <div class="col-md-12 col-lg-12" style="margin-left:5cm" > Data via MDS Euclidean(black = Stratified), (Blue = Random)</div>
+               <div class="col-md-12 col-lg-12"  id="MDSE"> </div>
+           </div>
+           <div class="row">
+               <div class="col-md-12 col-lg-12" style="margin-left:5cm" > Data via MDS Correlation(black = Stratified), (Blue = Random)</div>
+               <div class="col-md-12 col-lg-12"  id="MDSC"></div>
+           </div>
+       </div>
+
+       <div class="container" id="stratifiedImages">
+           <div class="row">
+              <div class="col-md-12 col-lg-12" style="margin-left:5cm" >Finding the value of optimal clusters</div>div>
+               <div class="col-md-12 col-lg-12" id = "K" ></div>
+           </div>
+           <div class="row">
+               <div class="col-md-12 col-lg-12" style="margin-left:5cm" >Choosing Intrinsic Dimensionality</div>div>
+               <div class="col-md-12 col-lg-12" id = "Eigen" ></div>
+           </div>
+           <div class="row">
+               <div class="col-md-12 col-lg-12" style="margin-left:5cm" >Finding the optimal number of clusters and finding PCA based on gamedata variables</div>div>
+               <div class="col-md-12 col-lg-12" id = "Bar" ></div>
+           </div>
+       </div>
+
+       <div class="container" id="randomImages">
+            <div class="row">
+                <div class="col-md-12 col-lg-12" style="margin-left:5cm" >Choosing Intrinsic Dimensionality</div>div>
+               <div class="col-md-12 col-lg-12" id = Eigenrandom></div>
+           </div>
+            <div class="row">
+               <div class="col-md-12 col-lg-12" style="margin-left:5cm" >Choosing Significant Variables</div>div>
+               <div class="col-md-12 col-lg-12" id = "Barrandom" ></div>
+           </div>
+       </div>
+
+
+
+
+       <div class="container" id="random">
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12" style="margin-left:5cm" > Scatter Plot Matrix of the three highest PCA loaded attributes Stratified</div>
+               <div class="col-md-12 col-lg-12"  id="PCAS"></div>
+           </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12" style="margin-left:5cm"> Scatter Plot Matrix of the three highest PCA loaded attributes Random)</div>
+               <div class="col-md-12 col-lg-12"  id="PCASR"></div>
+           </div>
+       </div>
+
+       <script type="text/javascript" src="./static/lib/js/d3.min.js"></script>
+       <script type="text/javascript" src="./static/lib/js/jquery-3.1.1.min.js"></script>
+       <script type="text/javascript" src="./static/lib/js/bootstrap.js"></script>
+       <script src="./static/lib/js/crossfilter.js"></script>
+       <script src="./static/lib/js/queue.js"></script>
+       <script src="./static/lib/js/keen.min.js"></script>
+       <script type="text/javascript" src="./static/js/Plots.js"></script>
+
+ 	</body>
+</html>
